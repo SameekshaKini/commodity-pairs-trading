@@ -1,6 +1,6 @@
 # Results Summary
 
-All numbers from the executed v6 notebook. Parameters trained on 2000–2019, tested on 2020–2023.
+All numbers from the executed Pairs_Trading.ipynb notebook. Parameters trained on 2000–2019, tested on 2020–2023.
 
 ## Pair Metadata
 
