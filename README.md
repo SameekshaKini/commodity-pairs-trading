@@ -136,21 +136,14 @@ The notebook reads `data/commodity_futures.csv` directly. No other setup needed 
 
 ## The v6 Innovation: Half-Life-Based Rolling Windows
 
-Previous versions used a fixed 60-day rolling window for all pairs. This was theoretically inconsistent:
+**Rule:** `window = max(round(2 × half_life), 20)`
 
-- **Gas Oil/Diesel (HL = 5.8 days):** 60 days = ~10 reversion cycles. Over-smoothed β, slow to adapt.
-- **Soybeans/Meal (HL = 85.8 days):** 60 days < 1 full reversion cycle. Underestimated spread volatility → false signals.
-
-**v6 rule:** `window = max(round(2 × half_life), 20)`
-
-| Pair | Old Window | New Window | IS Sharpe Change |
+| Pair | Old Window | New Window | IS Sharpe |
 |------|-----------|-----------|-----------------|
-| WTI / Brent | 60d | 44d | 0.312 → 0.301 |
-| Gas Oil / Diesel | 60d | 20d | 1.664 → 1.312 |
-| Soybeans / Meal | 60d | 171d | 0.156 → **0.586** (+275%) |
-| Corn / Wheat | 60d | 169d | 0.281 → 0.382 |
-
-Walk-forward CV activation improved dramatically: WTI/Brent went from 1/5 to 4/5 active folds; Gas Oil/Diesel from 3/5 to 5/5.
+| WTI / Brent | 60d | 44d |0.301 |
+| Gas Oil / Diesel | 60d | 20d | 1.312 |
+| Soybeans / Meal | 60d | 171d | **0.586** |
+| Corn / Wheat | 60d | 169d | 0.382 |
 
 ---
 
@@ -182,6 +175,5 @@ See `requirements.txt`. Main packages:
 ---
 
 ## Citation / Course
-
-Time Series Analysis — Final Project  
+  
 Dataset: Commodity Futures Daily Prices (2000–2023)
