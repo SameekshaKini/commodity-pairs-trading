@@ -60,9 +60,9 @@ Gas Oil/Diesel's 2.3% coverage confirms a structural regime break — the OU mod
 
 ## v5 → v6 Rolling Window Impact
 
-| Pair | v5 Window | v6 Window | IS Sharpe v5 | IS Sharpe v6 | CV Mean v5 | CV Mean v6 |
-|------|----------|----------|-------------|-------------|-----------|-----------|
-| WTI / Brent | 60d | 44d | 0.312 | 0.301 | −0.168 (1/5) | +0.855 (4/5) |
-| Gas Oil / Diesel | 60d | 20d | 1.664 | 1.312 | −0.406 (3/5) | +1.424 (5/5) |
-| Soybeans / Meal | 60d | 171d | 0.156 | 0.586 | +0.999 (2/5) | +0.708 (4/5) |
-| Corn / Wheat | 60d | 169d | 0.281 | 0.382 | +0.439 (2/5) | −0.212 (4/5) |
+| Pair | Window | IS Sharpe | CV Mean |
+|------|----------|----------|-------------|
+| WTI / Brent | 44d | 0.301 | +0.855 (4/5) |
+| Gas Oil / Diesel | 20d | 1.312 | +1.424 (5/5) |
+| Soybeans / Meal | 171d | 0.586 | +0.708 (4/5) |
+| Corn / Wheat | 169d | 0.382 | −0.212 (4/5) |
