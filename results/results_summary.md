@@ -58,7 +58,7 @@ Gas Oil/Diesel's 2.3% coverage confirms a structural regime break — the OU mod
 | Soybeans / Soybean Meal | Bidirectional from Lag 1 | Neither — crush processors respond to both |
 | Corn / Wheat | Corn leads Wheat (Lags 1–10 dominant) | CBOT Corn (CME) price-discovers first |
 
-## v5 → v6 Rolling Window Impact
+## Rolling Window
 
 | Pair | Window | IS Sharpe | CV Mean |
 |------|----------|----------|-------------|
