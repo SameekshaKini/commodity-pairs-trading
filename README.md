@@ -134,16 +134,16 @@ The notebook reads `data/commodity_futures.csv` directly. No other setup needed 
 
 ---
 
-## The v6 Innovation: Half-Life-Based Rolling Windows
+## Half-Life-Based Rolling Windows
 
 **Rule:** `window = max(round(2 × half_life), 20)`
 
-| Pair | Old Window | New Window | IS Sharpe |
-|------|-----------|-----------|-----------------|
-| WTI / Brent | 60d | 44d |0.301 |
-| Gas Oil / Diesel | 60d | 20d | 1.312 |
-| Soybeans / Meal | 60d | 171d | **0.586** |
-| Corn / Wheat | 60d | 169d | 0.382 |
+| Pair| Window | IS Sharpe |
+|------|-----------|-----------|
+| WTI / Brent | 44d |0.301 |
+| Gas Oil / Diesel | 20d | 1.312 |
+| Soybeans / Meal | 171d | **0.586** |
+| Corn / Wheat | 169d | 0.382 |
 
 ---
 
