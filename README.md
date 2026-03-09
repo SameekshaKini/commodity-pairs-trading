@@ -84,7 +84,7 @@ The notebook reads `data/commodity_futures.csv` directly. No other setup needed 
 
 ---
 
-## Notebook Structure (60 cells)
+## Notebook Structure
 
 | Section | What It Does |
 |---------|-------------|
@@ -111,10 +111,10 @@ The notebook reads `data/commodity_futures.csv` directly. No other setup needed 
 ### In-Sample (2000–2023, Static OLS)
 | Pair | IS Sharpe | Trades | Win Rate |
 |------|-----------|--------|----------|
-| Gas Oil / Diesel | 1.312 | 295 | 99.0% |
-| Corn / Wheat | 0.382 | 63 | 73.0% |
-| Soybeans / Meal | 0.586 | 63 | 77.8% |
-| WTI / Brent | 0.301 | 170 | 82.9% |
+| Gas Oil / Diesel | 2.100 | 381 | 97.4% |
+| Corn / Wheat | 0.458 | 51 | 74.5% |
+| Soybeans / Meal | 0.569 | 55 | 74.5% |
+| WTI / Brent | 0.506 | 89 | 79.8% |
 
 ### Out-of-Sample (2020–2023, parameters frozen at end-2019)
 | Pair | OOS Sharpe | Max Drawdown | Trades | Key Finding |
@@ -128,9 +128,9 @@ The notebook reads `data/commodity_futures.csv` directly. No other setup needed 
 | Pair | Active Folds | CV Mean Sharpe |
 |------|-------------|---------------|
 | Gas Oil / Diesel | 5/5 | +1.424 |
-| WTI / Brent | 4/5 | +0.855 |
-| Soybeans / Meal | 4/5 | +0.708 |
-| Corn / Wheat | 4/5 | −0.212 |
+| WTI / Brent | 3/5 | +1.285 |
+| Soybeans / Meal | 4/5 | +0.559 |
+| Corn / Wheat | 4/5 | −0.358 |
 
 ---
 
@@ -140,10 +140,10 @@ The notebook reads `data/commodity_futures.csv` directly. No other setup needed 
 
 | Pair| Window | IS Sharpe |
 |------|-----------|-----------|
-| WTI / Brent | 44d |0.301 |
-| Gas Oil / Diesel | 20d | 1.312 |
-| Soybeans / Meal | 171d | **0.586** |
-| Corn / Wheat | 169d | 0.382 |
+| WTI / Brent | 138d |0.506 |
+| Gas Oil / Diesel | 20d | 2.1 |
+| Soybeans / Meal | 210d | **0.569** |
+| Corn / Wheat | 238d | 0.458 |
 
 ---
 
